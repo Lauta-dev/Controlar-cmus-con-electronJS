@@ -1,6 +1,6 @@
 const { spawn } = require("node:child_process");
 const cmus = spawn("cmus-remote", ["-Q"]);
-const play = (v) => spawn("cmus-remote", [`-${v}`]);
+export const play = (v) => spawn("cmus-remote", [`-${v}`]);
 const tag = "tag";
 
 cmus.stdout.on("data", (d) => {
