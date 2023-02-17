@@ -1,19 +1,23 @@
-import { playCmus, estado } from "./cmus.js";
+import { saberEstado } from "./CMUS/cmusEstado.js";
+import { playCmus } from "./CMUS/cmusReproducion.js";
+import { cambiarTitulo } from "./CMUS/estado.js";
 
-const titulo = document.getElementById("titulo");
 const play = document.getElementById("play");
 const next = document.getElementById("next");
 const prev = document.getElementById("prev");
 
-play.addEventListener("click", () => {
-  
-  playCmus("u");
-  if (play.innerText == "Pause") play.innerText = "Play";
-  else play.innerText = "Pause";
+const btnPlay = async () => {
+  const estadoCmus = await saberEstado();
+  cambiarTitulo();
+  if (estadoCmus == "playing") {
+    playCmus("u");
+    play.innerText = "Play";
+  } else {
+    playCmus("p");
+    play.innerText = "Pause";
+  }
+};
 
-  if (estado == "playing") titulo.innerText = "Pausado";
-  else titulo.innerText = "dsakjdiasjid"
-});
-
-next.addEventListener("click", () => playCmus("n"));
-prev.addEventListener("click", () => playCmus("r"));
+play.addEventListener("click", btnPlay);
+next.addEventListener("click");
+prev.addEventListener("click");
