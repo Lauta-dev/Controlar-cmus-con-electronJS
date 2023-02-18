@@ -1,0 +1,11 @@
+.equipo {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+}

@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../src/estilos/conteiner.css" />
+    <link rel="stylesheet" href="../src/estilos/plataforma.css">
     <link rel="stylesheet" href="../src/estilos/base.css" />
     <title>Document</title>
   </head>
   <body class="contenedor">
+    <header class="equipo">
+      <h2>Equipo:</h2>
+      <div class="info">
+        <p id="plataforma"></p>
+        <p id="homedir"></p>
+        <p id="shell"></p>
+        <p id="kernel"></p>
+      </div>
+    </header>
     <div class="contenedorCmus">
       <div>
         <h2 id="estado">Cmus no esta iniciado</h2>
@@ -23,5 +33,6 @@
     </div>
 
     <script src="../scripts.js" type="module"></script>
+    <script src="../src/scrips/os/plataforma.js"></script>
   </body>
 </html>

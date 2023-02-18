@@ -1,6 +1,7 @@
 import { titulo } from "./musica.js";
 import { playCmus } from "./comandos.js";
 import { cambiarTitulo } from "./Verificar-estado.js";
+
 import { Cancion } from "../../../scripts.js";
 import { artista } from "./artista.js";
 import { artistaHTML } from "../../../scripts.js";
