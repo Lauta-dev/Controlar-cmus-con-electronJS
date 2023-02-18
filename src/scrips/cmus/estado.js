@@ -1,6 +1,6 @@
 const { spawn } = require("node:child_process");
 
-// Saca el estado de Cmus (playing/paused)
+// Devuelve el estado de Cmus (playing/paused/stopped)
 export const cmusEstado = () => {
   const cmus = spawn("cmus-remote", ["-Q"]);
 

@@ -1,14 +1,12 @@
 const { spawn } = require("node:child_process");
 
-export const artista = () => {
+// Exporta el titulo de la cancíon
+export const titulo = () => {
   const proceso = spawn("cmus-remote", ["-Q"]);
-
-  // tag artist 5 Seconds Of Summer
-
-  return new Promise((resolve) =>
+  return new Promise((res, rej) =>
     proceso.stdout.on("data", (data) => {
       const cmus = data.toString().trim().split("\n");
-      resolve(cmus.find((e) => e.startsWith(`tag artist`)));
+      res(cmus.find((e) => e.startsWith(`tag title`)));
     })
   );
 };

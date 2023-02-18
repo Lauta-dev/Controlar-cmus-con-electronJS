@@ -1,4 +1,4 @@
-import { cmusEstado } from "./cmusEstado.js";
+import { cmusEstado } from "./estado.js";
 const titulo = document.getElementById("estado");
 
 export const cambiarTitulo = async () => {
