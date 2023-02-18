@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/estilos/conteiner.css" />
+    <link rel="stylesheet" href="../src/estilos/base.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1 id="titulo"></h1>
-    <button id="play">Pause</button>
-    <button id="next">Next</button>
-    <button id="prev">Prev</button>
+  <body class="contenedor">
+    <div class="contenedorCmus">
+      <div>
+        <h2 id="estado">Cmus no esta iniciado</h2>
+        <h2 id="artista">* artista</h2>
+        <h2 id="cancion">* cancion</h2>
+      </div>
+      <div class="contenedorBtn">
+        <button id="play">Pause</button>
+        <button id="next">Next</button>
+        <button id="prev">Prev</button>
+      </div>
+    </div>
 
     <script src="../c.js" type="module"></script>
-    <script src="../CMUS/estado.js" type="module"></script>
+    <script src="../src/scrips/CMUS/estado.js" type="module"></script>
   </body>
 </html>

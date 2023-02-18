@@ -1,0 +1,25 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.contenedorCmus {
+  width: 600px;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.contenedorBtn {
+  margin: 10px 0 0 0;
+}
+
+.contenedorBtn > button {
+  padding: 5px;
+  border: none;
+  background: white;
+  width: 50px;
+}
