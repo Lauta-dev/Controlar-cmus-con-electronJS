@@ -1,6 +1,6 @@
-import { artista } from "./src/scrips/cmus/artista.js";
-import { titulo } from "./src/scrips/cmus/musica.js";
-import { btn } from "./src/scrips/cmus/cmusBtn.js";
+import { artista } from "./artista.js";
+import { titulo } from "./musica.js";
+import { btn } from "./cmusBtn.js";
 
 export const artistaHTML = document.getElementById("artista");
 export const Cancion = document.getElementById("cancion");

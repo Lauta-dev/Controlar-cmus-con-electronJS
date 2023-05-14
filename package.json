@@ -4,12 +4,12 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "dev": "electron ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "electron": "^23.1.0"
+  "dependencies": {
+    "electron": "24.3.0"
   }
 }

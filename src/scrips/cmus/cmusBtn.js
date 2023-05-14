@@ -2,10 +2,10 @@ import { titulo } from "./musica.js";
 import { playCmus } from "./comandos.js";
 import { cambiarTitulo } from "./Verificar-estado.js";
 
-import { Cancion } from "../../../scripts.js";
+import { Cancion } from "./controles.js";
 import { artista } from "./artista.js";
-import { artistaHTML } from "../../../scripts.js";
-import { cmusEstado } from "../cmus/estado.js";
+import { artistaHTML } from "./controles.js";
+import { cmusEstado } from "./estado.js";
 
 const btnNext = async () => {
   playCmus("n");
