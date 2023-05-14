@@ -24,6 +24,6 @@ npm i
 npm run dev
 ```
 
-!["a"]("./src/img/electron.png")
+![a](src/img/electron.png)
 
-<img href='./src/img/electron.png'/>
+
